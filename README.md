@@ -3,6 +3,50 @@ Com o objetivo de entender e explorar a sintaxe básica do PowerShell, desenvolv
 
 Após executar o script o usuário seleciona qual tipo de operação matemática deseja (Adição, Subtração, Multiplicação e Divisão) e o script irá gerar a tabuada correspondente dos números de 1 a 10.
 
+### Como funciona:
+O programa solicita uma entrada que é o valor correspondente a operação desejada. Após a seleção ele inicia dois loops alinhados com as funções Switch e For. O primeiro loop seleciona o primeiro número e o segundo irá subtmeter um cálculo seguindo de 1 até 10. Após encerrar e ele parte para o segundo número da tabuada. Toda essa estrutra está em um loop usando Do e While para permitir que o usuário interaja quantas vezes for necessário.
+Para encerrar o pragrama seleciona a opção 0.
+
+### Exemplos de saída:
+```
+Escolha a operação da tabuada:
+[1] Adição
+[2] Subtração
+[3] Multiplicação
+[4] Divisão
+[0] Sair
+```
+```
+Tabuada de Adição:
+ Numero:  1
+ 1 + 1 = 2
+ 1 + 2 = 3
+ 1 + 3 = 4
+ 1 + 4 = 5
+ 1 + 5 = 6
+ 1 + 6 = 7
+ 1 + 7 = 8
+ 1 + 8 = 9
+ 1 + 9 = 10
+ 1 + 10 = 11
+-------------
+```
+```
+Tabuada de Multiplicação:
+ Numero:  5
+ 5 * 1 = 5
+ 5 * 2 = 10
+ 5 * 3 = 15
+ 5 * 4 = 20
+ 5 * 5 = 25
+ 5 * 6 = 30
+ 5 * 7 = 35
+ 5 * 8 = 40
+ 5 * 9 = 45
+ 5 * 10 = 50
+```
+
+### Código fonte:
 ```
 clear
 
@@ -91,8 +135,6 @@ Tente novamente.
 
 }
 } While($op -ne 0)
-
-
 ```
 
 ### SUPORTE, DÚVIDAS E SUGESTÕES
